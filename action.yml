@@ -1,0 +1,45 @@
+name: "CiteReady AI Search, llms.txt & Schema GEO Gate"
+description: "Verify /llms.txt, /robots.txt access across 10 AI search crawlers (OAI-SearchBot, PerplexityBot, ClaudeBot), and Schema.org JSON-LD."
+author: "OmniForge Studio"
+branding:
+  icon: "search"
+  color: "purple"
+
+inputs:
+  url:
+    description: "Public website or docs URL to audit (e.g. https://docs.yourproduct.com)"
+    required: true
+  min-score:
+    description: "Minimum passing AI search readiness score (0-100)"
+    required: false
+    default: "65"
+  require-llms-txt:
+    description: "Fail the workflow if /llms.txt is missing or empty (true/false)"
+    required: false
+    default: "false"
+
+outputs:
+  score:
+    description: "AI Citation Readiness score (0-100)"
+    value: ${{ steps.citeready.outputs.score }}
+  has-llms-txt:
+    description: "Whether a valid /llms.txt file was detected (true/false)"
+    value: ${{ steps.citeready.outputs.has_llms_txt }}
+  blocked-bots:
+    description: "Count of blocked AI search crawlers in robots.txt"
+    value: ${{ steps.citeready.outputs.blocked_bots }}
+
+runs:
+  using: "composite"
+  steps:
+    - name: Run CiteReady GEO & llms.txt Audit
+      id: citeready
+      shell: bash
+      env:
+        INPUT_URL: ${{ inputs.url }}
+        INPUT_MIN_SCORE: ${{ inputs.min-score }}
+        INPUT_REQ_LLMS: ${{ inputs.require-llms-txt }}
+      run: |
+        node "${{ github.action_path }}/src/audit.mjs" "$INPUT_URL" \
+          --min-score "$INPUT_MIN_SCORE" \
+          --require-llms-txt "$INPUT_REQ_LLMS"

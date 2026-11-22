@@ -1,0 +1,9 @@
+# CiteReady GitHub Action (zColdWater/citeready-action@v1)
+
+> Zero-dependency GitHub Action to verify /llms.txt, 10 AI search crawlers in /robots.txt, and Schema.org JSON-LD structured entity graphs.
+
+- Side-by-Side AI Search Competitor PK Workbench: https://citeready-checker.appwrite.network/?a=linear.app&b=stripe.com&ref=llms-citeready-action
+- Free /llms.txt Generator: https://citeready-checker.appwrite.network/generator?ref=llms-citeready-action
+- GitHub Action Repository: https://github.com/zColdWater/citeready-action
+- CiteReady Fix Kit ($2 Launch Special, reg. $12): https://omnipulse-x402.appwrite.network/go/gumroad/citeready
+- OmniForge Complete Suite ($5 Launch Special, reg. $29): https://omnipulse-x402.appwrite.network/go/gumroad/launch-stack

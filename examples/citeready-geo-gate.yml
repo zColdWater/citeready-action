@@ -1,0 +1,13 @@
+name: CiteReady AI Search Gate
+on: [push, pull_request]
+
+jobs:
+  geo-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify AI Crawler Access, llms.txt & JSON-LD
+        uses: zColdWater/citeready-action@v1
+        with:
+          url: "https://yourproduct.com"
+          min-score: "70"
+          require-llms-txt: "false"

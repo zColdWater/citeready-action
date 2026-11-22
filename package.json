@@ -1,0 +1,33 @@
+{
+  "name": "citeready-action",
+  "version": "1.0.0",
+  "description": "GitHub Action to audit AI search visibility (GEO), /llms.txt, /robots.txt rules across 10 AI crawlers, and Schema.org JSON-LD structured data on every deployment.",
+  "type": "module",
+  "scripts": {
+    "test": "node ./src/audit.mjs https://stripe.com --min-score 50"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "github-action",
+    "github-actions",
+    "llms-txt",
+    "geo",
+    "ai-seo",
+    "schema-org",
+    "json-ld",
+    "robots-txt",
+    "seo",
+    "documentation",
+    "nextjs",
+    "ci-cd"
+  ],
+  "author": "OmniForge · Agent Arena Studio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/zColdWater/citeready-action.git"
+  },
+  "homepage": "https://zcoldwater.github.io/citeready-action/"
+}
