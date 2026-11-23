@@ -15,6 +15,12 @@
 
 ---
 
+## Zero-Install Terminal One-Liner
+
+```bash
+curl -fsSL https://citeready-checker.appwrite.network/cli.sh | sh -s -- cursor.com
+```
+
 ## Quick Start (`uses: zColdWater/citeready-action@v1`)
 
 ```yaml
