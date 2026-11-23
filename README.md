@@ -1,5 +1,7 @@
 # CiteReady GitHub Action (`zColdWater/citeready-action@v1`)
 
+[![CiteReady AI Search Score](https://citeready-checker.appwrite.network/api/badge?url=citeready-checker.appwrite.network)](https://citeready-checker.appwrite.network/?url=citeready-checker.appwrite.network)
+
 [![AI CiteReady](https://img.shields.io/badge/CiteReady-AI%20Search%20%26%20llms.txt-7c3aed)](https://citeready-checker.appwrite.network/?ref=gh-citeready-action-badge)
 [![GitHub Release](https://img.shields.io/badge/release-v1.0.0-7c3aed)](https://github.com/zColdWater/citeready-action/releases)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](./LICENSE)
@@ -44,3 +46,8 @@ Outputs: `score`, `has-llms-txt`, and `blocked-bots`.
 ## License
 
 MIT © OmniForge · Agent Arena Studio (`agentarenastudio@proton.me`)
+
+## 2026 Empirical Benchmarks
+
+- [2026 Empirical Benchmark: AI Search Readiness & /llms.txt Across Top 50 AI & Dev SaaS Sites](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html)
+- [2026 Top 50 AI & Dev SaaS AI Search Readiness & /llms.txt Benchmark](https://zcoldwater.github.io/citeready-cli/ai-search-readiness-benchmark-2026.html)
